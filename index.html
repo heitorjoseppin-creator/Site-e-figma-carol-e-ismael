@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TRAINX — Plataforma Fitness</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ==================================================
+       SIDEBAR DESKTOP
+  =================================================== -->
+
+  <aside class="sidebar">
+
+    <div class="logo">
+      <div class="logo-mark">T</div>
+      <span>TRAIN<span class="orange">X</span></span>
+    </div>
+
+    <div class="menu-label">MENU PRINCIPAL</div>
+
+    <nav class="sidebar-menu">
+
+      <button
+        class="menu-item active"
+        data-screen="dashboard"
+      >
+        <span class="menu-icon">⌂</span>
+        <span>Dashboard</span>
+      </button>
+
+      <button
+        class="menu-item"
+        data-screen="training"
+      >
+        <span class="menu-icon">⚡</span>
+        <span>Treinos</span>
+      </button>
+
+      <button
+        class="menu-item"
+        data-screen="evolution"
+      >
+        <span class="menu-icon">▥</span>
+        <span>Evolução</span>
+      </button>
+
+      <button
+        class="menu-item"
+        data-screen="profile"
+      >
+        <span class="menu-icon">◉</span>
+        <span>Perfil</span>
+      </button>
+
+    </nav>
+
+
+    <div class="menu-label account-label">
+      CONTA
+    </div>
+
+    <nav class="sidebar-menu">
+
+      <button class="menu-item">
+        <span class="menu-icon">⚙</span>
+        <span>Configurações</span>
+      </button>
+
+      <button class="menu-item">
+        <span class="menu-icon">?</span>
+        <span>Ajuda</span>
+      </button>
+
+    </nav>
+
+
+    <div class="sidebar-user">
+
+      <div class="user-avatar">
+        LS
+      </div>
+
+      <div class="sidebar-user-info">
+        <strong>Lucas Silva</strong>
+        <span>Plano Premium</span>
+      </div>
+
+      <span class="user-more">•••</span>
+
+    </div>
+
+  </aside>
+
+
+  <!-- ==================================================
+       CONTEÚDO
+  =================================================== -->
+
+  <main class="main">
+
+
+    <!-- ==================================================
+         DASHBOARD
+    =================================================== -->
+
+    <section
+      id="dashboard"
+      class="screen active"
+    >
+
+      <header class="page-header">
+
+        <div>
+
+          <span class="eyebrow">
+            SEGUNDA-FEIRA, 29 DE SETEMBRO
+          </span>
+
+          <h1>
+            Olá, Lucas <span class="wave">👋</span>
+          </h1>
+
+        </div>
+
+
+        <div class="header-actions">
+
+          <button class="icon-button">
+            🔔
+            <span class="notification"></span>
+          </button>
+
+          <button class="profile-mini">
+            LS
+          </button>
+
+        </div>
+
+      </header>
+
+
+      <!-- HERO -->
+
+      <div class="dashboard-layout">
+
+        <div class="dashboard-left">
+
+
+          <article class="hero-card">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+              <span class="badge">
+                TREINO DE HOJE
+              </span>
+
+              <h2>
+                Superior & Força
+              </h2>
+
+              <p>
+                Peito, ombros e tríceps.
+                Um treino focado em força e hipertrofia.
+              </p>
+
+              <div class="hero-meta">
+
+                <span>◷ 52 min</span>
+                <span>🔥 420 kcal</span>
+                <span>8 exercícios</span>
+
+              </div>
+
+              <button
+                class="primary-button"
+                id="startWorkoutButton"
+              >
+                INICIAR TREINO
+                <span>→</span>
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <!-- ESTATÍSTICAS -->
+
+          <div class="stats-grid">
+
+            <article class="stat-card">
+
+              <div class="stat-icon orange-icon">
+                🔥
+              </div>
+
+              <span class="stat-label">
+                CALORIAS
+              </span>
+
+              <strong>
+                2.840
+              </strong>
+
+              <small>
+                kcal
+              </small>
+
+              <div class="stat-change positive">
+                +8.4%
+              </div>
+
+            </article>
+
+
+            <article class="stat-card">
+
+              <div class="stat-icon orange-icon">
+                ⚡
+              </div>
+
+              <span class="stat-label">
+                VOLUME
+              </span>
+
+              <strong>
+                42.5
+              </strong>
+
+              <small>
+                ton
+              </small>
+
+              <div class="stat-change positive">
+                +12.1%
+              </div>
+
+            </article>
+
+
+            <article class="stat-card">
+
+              <div class="stat-icon blue-icon">
+                ◷
+              </div>
+
+              <span class="stat-label">
+                TREINOS
+              </span>
+
+              <strong>
+                4
+              </strong>
+
+              <small>
+                sessões
+              </small>
+
+              <div class="stat-change">
+                esta semana
+              </div>
+
+            </article>
+
+
+            <article class="stat-card">
+
+              <div class="stat-icon green-icon">
+                ↗
+              </div>
+
+              <span class="stat-label">
+                EVOLUÇÃO
+              </span>
+
+              <strong>
+                +12%
+              </strong>
+
+              <small>
+                progresso
+              </small>
+
+              <div class="stat-change positive">
+                excelente
+              </div>
+
+            </article>
+
+          </div>
+
+
+          <!-- GRÁFICO -->
+
+          <article class="card">
+
+            <div class="card-header">
+
+              <div>
+
+                <h3>
+                  Volume de treino
+                </h3>
+
+                <p>
+                  Quilos levantados por dia
+                </p>
+
+              </div>
+
+              <select class="dark-select">
+                <option>Esta semana</option>
+                <option>Este mês</option>
+                <option>Este ano</option>
+              </select>
+
+            </div>
+
+
+            <div class="chart">
+
+              <div class="chart-column">
+                <div
+                  class="chart-bar"
+                  style="height:42%"
+                ></div>
+                <span>SEG</span>
+              </div>
+
+              <div class="chart-column">
+                <div
+                  class="chart-bar"
+                  style="height:63%"
+                ></div>
+                <span>TER</span>
+              </div>
+
+              <div class="chart-column">
+                <div
+                  class="chart-bar"
+                  style="height:51%"
+                ></div>
+                <span>QUA</span>
+              </div>
+
+              <div class="chart-column">
+                <div
+                  class="chart-bar"
+                  style="height:76%"
+                ></div>
+                <span>QUI</span>
+              </div>
+
+              <div class="chart-column active">
+                <div
+                  class="chart-bar"
+                  style="height:92%"
+                ></div>
+                <span>SEX</span>
+              </div>
+
+              <div class="chart-column">
+                <div
+                  class="chart-bar"
+                  style="height:45%"
+                ></div>
+                <span>SÁB</span>
+              </div>
+
+              <div class="chart-column">
+                <div
+                  class="chart-bar"
+                  style="height:27%"
+                ></div>
+                <span>DOM</span>
+              </div>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+
+        <!-- COLUNA DIREITA -->
+
+        <div class="dashboard-right">
+
+
+          <!-- META -->
+
+          <article class="card">
+
+            <div class="card-header">
+
+              <div>
+
+                <h3>
+                  Meta semanal
+                </h3>
+
+                <p>
+                  Mantenha sua consistência
+                </p>
+
+              </div>
+
+              <strong class="orange">
+                4/5
+              </strong>
+
+            </div>
+
+
+            <div class="progress-info">
+
+              <span>
+                Treinos realizados
+              </span>
+
+              <strong>
+                80%
+              </strong>
+
+            </div>
+
+            <div class="progress">
+              <div style="width:80%"></div>
+            </div>
+
+          </article>
+
+
+          <!-- EVOLUÇÃO MUSCULAR -->
+
+          <article class="card">
+
+            <div class="card-header">
+
+              <div>
+
+                <h3>
+                  Evolução muscular
+                </h3>
+
+                <p>
+                  Últimos 30 dias
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <div class="muscle-row">
+
+              <div class="muscle-title">
+                <span>Peito</span>
+                <strong>82%</strong>
+              </div>
+
+              <div class="progress">
+                <div style="width:82%"></div>
+              </div>
+
+            </div>
+
+
+            <div class="muscle-row">
+
+              <div class="muscle-title">
+                <span>Costas</span>
+                <strong>74%</strong>
+              </div>
+
+              <div class="progress">
+                <div style="width:74%"></div>
+              </div>
+
+            </div>
+
+
+            <div class="muscle-row">
+
+              <div class="muscle-title">
+                <span>Pernas</span>
+                <strong>68%</strong>
+              </div>
+
+              <div class="progress">
+                <div style="width:68%"></div>
+              </div>
+
+            </div>
+
+
+            <div class="muscle-row">
+
+              <div class="muscle-title">
+                <span>Ombros</span>
+                <strong>61%</strong>
+              </div>
+
+              <div class="progress">
+                <div style="width:61%"></div>
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- PRÓXIMOS EXERCÍCIOS -->
+
+          <article class="card">
+
+            <div class="card-header">
+
+              <div>
+
+                <h3>
+                  Próximos exercícios
+                </h3>
+
+                <p>
+                  Treino de hoje
+                </p>
+
+              </div>
+
+              <button
+                class="text-button"
+                data-screen="training"
+              >
+                Ver todos
+              </button>
+
+            </div>
+
+
+            <div class="exercise-list">
+
+
+              <div class="exercise-item">
+
+                <div class="exercise-number">
+                  01
+                </div>
+
+                <div class="exercise-info">
+
+                  <strong>
+                    Supino Reto
+                  </strong>
+
+                  <span>
+                    4 séries × 10 reps
+                  </span>
+
+                </div>
+
+                <span>
+                  →
+                </span>
+
+              </div>
+
+
+              <div class="exercise-item">
+
+                <div class="exercise-number">
+                  02
+                </div>
+
+                <div class="exercise-info">
+
+                  <strong>
+                    Crucifixo Inclinado
+                  </strong>
+
+                  <span>
+                    3 séries × 12 reps
+                  </span>
+
+                </div>
+
+                <span>
+                  →
+                </span>
+
+              </div>
+
+
+              <div class="exercise-item">
+
+                <div class="exercise-number">
+                  03
+                </div>
+
+                <div class="exercise-info">
+
+                  <strong>
+                    Tríceps Corda
+                  </strong>
+
+                  <span>
+                    3 séries × 12 reps
+                  </span>
+
+                </div>
+
+                <span>
+                  →
+                </span>
+
+              </div>
+
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         TREINOS
+    =================================================== -->
+
+    <section
+      id="training"
+      class="screen"
+    >
+
+      <header class="page-header">
+
+        <div>
+
+          <span class="eyebrow">
+            BIBLIOTECA
+          </span>
+
+          <h1>
+            Meus treinos
+          </h1>
+
+        </div>
+
+        <button class="primary-button">
+          + NOVO TREINO
+        </button>
+
+      </header>
+
+
+      <div class="filters">
+
+        <button class="filter active">
+          Todos
+        </button>
+
+        <button class="filter">
+          Hipertrofia
+        </button>
+
+        <button class="filter">
+          Força
+        </button>
+
+        <button class="filter">
+          Pernas
+        </button>
+
+        <button class="filter">
+          Peito
+        </button>
+
+        <button class="filter">
+          Costas
+        </button>
+
+      </div>
+
+
+      <div class="training-grid">
+
+
+        <article class="training-card">
+
+          <div class="training-image chest-image">
+            <span class="badge">
+              HIPERTROFIA
+            </span>
+          </div>
+
+          <div class="training-body">
+
+            <h3>
+              Superior & Força
+            </h3>
+
+            <p>
+              Peito · Ombros · Tríceps
+            </p>
+
+            <div class="training-meta">
+
+              <span>◷ 52 min</span>
+              <span>8 exercícios</span>
+
+            </div>
+
+            <button
+              class="primary-button full-button"
+              data-screen="workout"
+            >
+              INICIAR TREINO →
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <article class="training-card">
+
+          <div class="training-image legs-image">
+            <span class="badge">
+              FORÇA
+            </span>
+          </div>
+
+          <div class="training-body">
+
+            <h3>
+              Leg Day
+            </h3>
+
+            <p>
+              Quadríceps · Posterior · Glúteos
+            </p>
+
+            <div class="training-meta">
+
+              <span>◷ 61 min</span>
+              <span>7 exercícios</span>
+
+            </div>
+
+            <button
+              class="primary-button full-button"
+              data-screen="workout"
+            >
+              INICIAR TREINO →
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <article class="training-card">
+
+          <div class="training-image back-image">
+            <span class="badge">
+              HIPERTROFIA
+            </span>
+          </div>
+
+          <div class="training-body">
+
+            <h3>
+              Costas & Bíceps
+            </h3>
+
+            <p>
+              Costas · Bíceps · Trapézio
+            </p>
+
+            <div class="training-meta">
+
+              <span>◷ 48 min</span>
+              <span>7 exercícios</span>
+
+            </div>
+
+            <button
+              class="primary-button full-button"
+              data-screen="workout"
+            >
+              INICIAR TREINO →
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <article class="training-card">
+
+          <div class="training-image shoulder-image">
+            <span class="badge">
+              DEFINIÇÃO
+            </span>
+          </div>
+
+          <div class="training-body">
+
+            <h3>
+              Ombros & Core
+            </h3>
+
+            <p>
+              Ombros · Abdômen · Core
+            </p>
+
+            <div class="training-meta">
+
+              <span>◷ 42 min</span>
+              <span>6 exercícios</span>
+
+            </div>
+
+            <button
+              class="primary-button full-button"
+              data-screen="workout"
+            >
+              INICIAR TREINO →
+            </button>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         TREINO EM ANDAMENTO
+    =================================================== -->
+
+    <section
+      id="workout"
+      class="screen"
+    >
+
+      <header class="workout-header">
+
+        <button
+          class="back-button"
+          data-screen="dashboard"
+        >
+          ←
+        </button>
+
+        <div>
+
+          <span class="eyebrow">
+            TREINO EM ANDAMENTO
+          </span>
+
+          <h1>
+            Superior & Força
+          </h1>
+
+        </div>
+
+        <div class="workout-timer">
+          <span>◷</span>
+          <strong id="workoutTimer">
+            00:00
+          </strong>
+        </div>
+
+      </header>
+
+
+      <div class="workout-grid">
+
+
+        <!-- EXERCÍCIO -->
+
+        <article class="current-exercise card">
+
+          <span class="badge">
+            EXERCÍCIO <span id="exerciseNumber">1</span> DE 8
+          </span>
+
+          <h2 id="exerciseName">
+            Supino Reto com Barra
+          </h2>
+
+          <p class="exercise-subtitle">
+            Peito · Tríceps · Ombros
+          </p>
+
+
+          <div class="exercise-progress">
+
+            <div class="progress-info">
+
+              <span>
+                Progresso do treino
+              </span>
+
+              <strong id="workoutProgressText">
+                12%
+              </strong>
+
+            </div>
+
+            <div class="progress">
+              <div
+                id="workoutProgress"
+                style="width:12%"
+              ></div>
+            </div>
+
+          </div>
+
+
+          <!-- SÉRIES -->
+
+          <div class="sets">
+
+            <div class="set completed">
+
+              <span>01</span>
+
+              <strong>
+                80 kg
+              </strong>
+
+              <span>
+                10 reps
+              </span>
+
+              <b>
+                ✓
+              </b>
+
+            </div>
+
+
+            <div class="set completed">
+
+              <span>02</span>
+
+              <strong>
+                80 kg
+              </strong>
+
+              <span>
+                10 reps
+              </span>
+
+              <b>
+                ✓
+              </b>
+
+            </div>
+
+
+            <div
+              class="set active"
+              id="activeSet"
+            >
+
+              <span>03</span>
+
+              <input
+                id="weightInput"
+                type="number"
+                value="80"
+                min="0"
+                placeholder="kg"
+              >
+
+              <input
+                id="repsInput"
+                type="number"
+                value="10"
+                min="1"
+                placeholder="reps"
+              >
+
+              <button
+                id="completeSetButton"
+                class="set-button"
+              >
+                CONCLUIR
+              </button>
+
+            </div>
+
+
+            <div class="set next-set">
+
+              <span>04</span>
+
+              <span>
+                Próxima série
+              </span>
+
+              <span>
+                —
+              </span>
+
+              <span>
+                —
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <button
+            id="nextExerciseButton"
+            class="primary-button full-button next-exercise"
+          >
+            PRÓXIMO EXERCÍCIO
+            <span>→</span>
+          </button>
+
+        </article>
+
+
+        <!-- DESCANSO -->
+
+        <aside class="rest-panel card">
+
+          <span class="eyebrow">
+            DESCANSO
+          </span>
+
+          <div
+            class="rest-timer"
+            id="restTimer"
+          >
+            01:30
+          </div>
+
+          <p>
+            Prepare-se para a próxima série.
+          </p>
+
+          <div class="rest-controls">
+
+            <button
+              id="addRestButton"
+              class="secondary-button"
+            >
+              +30s
+            </button>
+
+            <button
+              id="skipRestButton"
+              class="secondary-button"
+            >
+              Pular
+            </button>
+
+          </div>
+
+        </aside>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         EVOLUÇÃO
+    =================================================== -->
+
+    <section
+      id="evolution"
+      class="screen"
+    >
+
+      <header class="page-header">
+
+        <div>
+
+          <span class="eyebrow">
+            PERFORMANCE
+          </span>
+
+          <h1>
+            Sua evolução
+          </h1>
+
+        </div>
+
+        <select class="dark-select">
+
+          <option>
+            Últimos 30 dias
+          </option>
+
+          <option>
+            Últimos 90 dias
+          </option>
+
+          <option>
+            Este ano
+          </option>
+
+        </select>
+
+      </header>
+
+
+      <div class="evolution-grid">
+
+
+        <article class="card evolution-chart-card">
+
+          <div class="card-header">
+
+            <div>
+
+              <h3>
+                Volume de treino
+              </h3>
+
+              <p>
+                Quilos levantados
+              </p>
+
+            </div>
+
+            <strong class="orange">
+              +12.8%
+            </strong>
+
+          </div>
+
+
+          <div class="large-chart">
+
+            <div
+              class="large-bar"
+              style="height:45%"
+            ></div>
+
+            <div
+              class="large-bar"
+              style="height:65%"
+            ></div>
+
+            <div
+              class="large-bar"
+              style="height:54%"
+            ></div>
+
+            <div
+              class="large-bar"
+              style="height:78%"
+            ></div>
+
+            <div
+              class="large-bar"
+              style="height:68%"
+            ></div>
+
+            <div
+              class="large-bar active"
+              style="height:92%"
+            ></div>
+
+            <div
+              class="large-bar"
+              style="height:71%"
+            ></div>
+
+          </div>
+
+        </article>
+
+
+        <article class="card">
+
+          <div class="card-header">
+
+            <div>
+
+              <h3>
+                PRs recentes
+              </h3>
+
+              <p>
+                Recordes pessoais
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="pr-item">
+
+            <span>🏆</span>
+
+            <div>
+              <strong>
+                Supino Reto
+              </strong>
+
+              <small>
+                95 kg
+              </small>
+            </div>
+
+            <b>
+              +5 kg
+            </b>
+
+          </div>
+
+
+          <div class="pr-item">
+
+            <span>🏆</span>
+
+            <div>
+              <strong>
+                Agachamento
+              </strong>
+
+              <small>
+                120 kg
+              </small>
+            </div>
+
+            <b>
+              +10 kg
+            </b>
+
+          </div>
+
+
+          <div class="pr-item">
+
+            <span>🏆</span>
+
+            <div>
+              <strong>
+                Remada
+              </strong>
+
+              <small>
+                85 kg
+              </small>
+            </div>
+
+            <b>
+              +5 kg
+            </b>
+
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <!-- MÉTRICAS -->
+
+      <div class="stats-grid evolution-stats">
+
+        <article class="stat-card">
+
+          <span class="stat-label">
+            PESO
+          </span>
+
+          <strong>
+            78.4
+          </strong>
+
+          <small>
+            kg
+          </small>
+
+        </article>
+
+        <article class="stat-card">
+
+          <span class="stat-label">
+            SESSÕES
+          </span>
+
+          <strong>
+            126
+          </strong>
+
+          <small>
+            treinos
+          </small>
+
+        </article>
+
+        <article class="stat-card">
+
+          <span class="stat-label">
+            VOLUME
+          </span>
+
+          <strong>
+            42.5
+          </strong>
+
+          <small>
+            toneladas
+          </small>
+
+        </article>
+
+        <article class="stat-card">
+
+          <span class="stat-label">
+            CONSISTÊNCIA
+          </span>
+
+          <strong>
+            86%
+          </strong>
+
+          <small>
+            este mês
+          </small>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         PERFIL
+    =================================================== -->
+
+    <section
+      id="profile"
+      class="screen"
+    >
+
+      <header class="page-header">
+
+        <div>
+
+          <span class="eyebrow">
+            MINHA CONTA
+          </span>
+
+          <h1>
+            Perfil
+          </h1>
+
+        </div>
+
+        <button class="secondary-button">
+          ⚙ Configurações
+        </button>
+
+      </header>
+
+
+      <article class="profile-card card">
+
+        <div class="profile-avatar-large">
+          LS
+        </div>
+
+        <div class="profile-main-info">
+
+          <h2>
+            Lucas Silva
+          </h2>
+
+          <p>
+            Objetivo: Hipertrofia
+          </p>
+
+          <span>
+            Membro desde Janeiro de 2026
+          </span>
+
+        </div>
+
+        <button class="secondary-button">
+          Editar perfil
+        </button>
+
+      </article>
+
+
+      <div class="profile-grid">
+
+
+        <article class="card">
+
+          <h3>
+            Informações
+          </h3>
+
+          <div class="profile-row">
+            <span>Peso</span>
+            <strong>78.4 kg</strong>
+          </div>
+
+          <div class="profile-row">
+            <span>Altura</span>
+            <strong>1.78 m</strong>
+          </div>
+
+          <div class="profile-row">
+            <span>Objetivo</span>
+            <strong>Hipertrofia</strong>
+          </div>
+
+          <div class="profile-row">
+            <span>Nível</span>
+            <strong>Intermediário</strong>
+          </div>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>
+            Estatísticas
+          </h3>
+
+          <div class="profile-stat-big">
+
+            <strong>
+              126
+            </strong>
+
+            <span>
+              treinos realizados
+            </span>
+
+          </div>
+
+          <div class="profile-stat-big">
+
+            <strong>
+              86%
+            </strong>
+
+            <span>
+              consistência mensal
+            </span>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ==================================================
+       MOBILE NAVIGATION
+  =================================================== -->
+
+  <nav class="mobile-nav">
+
+    <button
+      class="mobile-nav-item active"
+      data-screen="dashboard"
+    >
+      <span>⌂</span>
+      <small>Início</small>
+    </button>
+
+    <button
+      class="mobile-nav-item"
+      data-screen="training"
+    >
+      <span>⚡</span>
+      <small>Treinos</small>
+    </button>
+
+    <button
+      class="mobile-nav-item"
+      data-screen="evolution"
+    >
+      <span>▥</span>
+      <small>Evolução</small>
+    </button>
+
+    <button
+      class="mobile-nav-item"
+      data-screen="profile"
+    >
+      <span>◉</span>
+      <small>Perfil</small>
+    </button>
+
+  </nav>
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>
